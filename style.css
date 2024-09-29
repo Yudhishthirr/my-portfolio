@@ -842,3 +842,17 @@ body {
         scroll-snap-align: start;
     }
 }
+
+@media (max-width: 480px) {
+    .mywork-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        overflow-x: hidden;
+        scroll-snap-type: y mandatory;
+    }
+
+    .mywork-container img{
+        scroll-snap-align: start;
+    }
+}
