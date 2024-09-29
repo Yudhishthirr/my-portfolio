@@ -828,3 +828,17 @@ body {
 #footlogo{
     width: 100px;
 }
+
+@media (max-width: 768px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        overflow-x: hidden;
+        scroll-snap-type: y mandatory;
+    }
+
+    .services-format {
+        scroll-snap-align: start;
+    }
+}
